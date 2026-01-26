@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>myweb</title>
+</head>
+<body>
+    <button onclick="showPage('page1')">Page 1</button>
+<button onclick="showPage('page2')">Page 2</button>
+<button onclick="showPage('page3')">Page 3</button>
+
+<!-- Page 1 -->
+<div id="page1" class="page active">
+    <h2>Page 1</h2>
+    <p>This is first page content.</p>
+</div>
+
+<!-- Page 2 -->
+<div id="page2" class="page">
+    <h2>Page 2</h2>
+    <p>This is second page content.</p>
+</div>
+
+<!-- Page 3 -->
+<div id="page3" class="page">
+    <h2>Page 3</h2>
+    <p>This is third page content.</p>
+</div>
+<script>
+function showPage(pageId) {
+    let pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+}
+</script>
+</body>
+</html>
