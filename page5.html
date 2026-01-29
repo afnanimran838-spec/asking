@@ -41,6 +41,7 @@
             background-color: bisque;
             box-shadow: 2px 2px 15px 0px darkred;
             font-family: arial, sans-serif;
+            padding-bottom: 10px;
             
            /* border: 2px solid black;*/
         }
@@ -66,14 +67,43 @@
             font-size: 14px;
             margin-top: 1px;
             margin-bottom: 1px;
+            
         }
         
+        .btn1{
+    height: 60px;
+    width: 220px;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 30px;
+    color: pink;
+    background-color: blueviolet;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px 0px darkblue;
+    cursor: pointer;
+    border: none;
+    transition: .1s linear;
+    text-align: center;
+}
 
+.btn1:hover{
+    color: red;
+    background-color: lightpink;
+    animation: .1s linear;
+    box-shadow: 2px 2px 10px 0px red;
+}
+
+.btn1:active{
+
+    transform: scale(0.95);
+
+}
     </style>
 </head>
 <body>
     <div class="box1">
-    <h1>So I prepared this on 27 january</h1>
+    <h1>I Made this for Youuu!!!</h1>
 </div>
 
 <div class="card-container" id="boxes">
@@ -87,30 +117,32 @@
     <div class="card">
         <img src="let.jpg" alt="">
         <div class="txt">
-            <h1>Letter</h1>
-            <p>To be real, I really can't believe that maine Letter likha kisi ke liye woh bhi Love letter, toh behind this, uss din mujhe bhot zada yaad aa rhi thi teri or bss mujhe express karna tha toh maine bss likh diya tere liye. Cuz I'm Really in Love with You  </p>
+            <h1>Letter for You</h1>
+            <p>To be real, I really can't believe that maine Letter likha kisi ke liye woh bhi Love letter, toh behind this, uss din mujhe bhot zada yaad aa rhi thi teri or bss mujhe express karna tha toh maine bss likh diya tere liye. Cuz I'm Really in Love with You!!!  </p>
         </div>
     </div>
     <div class="card">
-        <img src="" alt="">
+        <img src="eye.jpg" alt="">
         <div class="txt">
-            <h1>card</h1>
-            <p>full story</p>
+            <h1>Your Eyes</h1>
+            <p>Toh... jab tu school me aayi thi tab maine tujhe dekha class me toh tab maine kuch bola or tu pichhe dekhi toh maine tab tujhe dekha tha tab sabse pehla eye contact hua tha tere sath toh usi time mai toh bss Flat ho gya tha fir maine jaankr tujhse eye contact krne ki koshish krta rehta tha, ab bss wohi eye contacts yaad aate hai. </p>
         </div>
     </div>
     <div class="card">
-        <img src="" alt="">
+        <img src="ai.JPG" alt="">
         <div class="txt">
-            <h1>card</h1>
-            <p>full story</p>
+            <h1>Imagined You</h1>
+            <p>So... uss din aise hi mann me aayi or trend bhi tha toh socha ki AI se generate krke dekhte hai ki "How would We look Together" toh socha yaar ki Real me bhi sath kaise lagenge ?? Toh yeh pata kare ?? </p>
         </div>
     </div>
 </div>
 
-
+<button class="btn1" onclick="openpage()">Conclusion  </button>
 
 <script>
-
+ function openpage(){
+            window.location.href = "page6.html";
+        }
 
 </script>
 </body>
